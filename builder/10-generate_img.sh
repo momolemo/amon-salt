@@ -1,5 +1,8 @@
+#!/bin/sh
+
+set -e
+
 cd /usr/tools
-git checkout amon3
 case $1 in
 (dvd)
  echo "make $1";;

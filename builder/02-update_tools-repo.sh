@@ -1,10 +1,14 @@
+#!/bin/sh
+
+set -e
+
 # Generate Amon3 repository sign keys
 # FIXME : IMPORT KEYS
 if [ ! -f /root/repo20.1.key ]
 then
     openssl genrsa -out /root/repo20.1.key 4096
     chmod 0400 /root/repo20.1.key
-    openssl rsa -in /rootrepo20.1.key -out /root/repo20.1.pub -pubout
+    openssl rsa -in /root/repo20.1.key -out /root/repo20.1.pub -pubout
     ## FIXME  : SAVE KEYS !!!!
 fi
 

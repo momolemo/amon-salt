@@ -1,3 +1,7 @@
+#!/bin/sh
+
+set -e
+
 cd /usr/tools
 make upload-base
 make upload-kernel
