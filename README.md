@@ -17,9 +17,9 @@ grab the repositories (overwriting standard ports and src):
     # git clone https://dev-eole.ac-dijon.fr/git/amon3.git
     # cd amon3
 
-    # builder/01-prepare_tools_repo.sh   # prepare eole/tools builder (cf https://github.com/eole/tools/blob/master/README.md)
+    # builder/01-reset_opnsense_repos.sh # reset and update opnsense git repositories
 
-    # builder/02-update_tools-repo.sh    # merge tools and ports with upstream
+    # builder/02-update_tools-repo.sh    # merge eole tools and ports git repositories with opnsense git repositories and push it to github eole
 
     # builder/03-get_precompile_sets.sh  # download precompiled sets
 
@@ -32,6 +32,3 @@ grab the repositories (overwriting standard ports and src):
     # builder/11-upload_sets.sh          # upload generated sets and images to SERVER (configured in eole/tools)
 
     # builder/12-amon3_packages_repo.sh  # update Amon3 repository
-
-
-## amon3
