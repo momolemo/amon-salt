@@ -1508,7 +1508,7 @@ private-domain: "ac-test.fr"</custom_options>
       <http_server uuid="dd0ba952-eccf-4afa-b2e8-b3f6645c073f">
         <servername>SCRIBE</servername>
         <syslog_targets/>
-        <listen_http_port/>
+        <listen_http_port>80</listen_http_port>
         <listen_https_port>443</listen_https_port>
         <proxy_protocol>0</proxy_protocol>
         <trusted_proxies/>
