@@ -1,4 +1,4 @@
-envoie du fichier conf.xml:
+envoi du fichier conf.xml:
   file.managed:
     - name: /conf/config.xml
     - source: salt://amon3/config/file/config.xml
