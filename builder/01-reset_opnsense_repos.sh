@@ -7,7 +7,7 @@ pkg install git rsync
 cd /usr
 
 # Reset local opnsense git repositories
-rm -rf src obj ports plugins core local tools
+rm -rf local/* obj/* src/* ports plugins core tools
 git clone https://github.com/opnsense/tools.git
 cd tools
 
