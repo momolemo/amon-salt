@@ -2,13 +2,15 @@
 
 set -e
 
+source builder.conf
+
 # Generate Amon3 repository sign keys
 # FIXME : IMPORT KEYS
-if [ ! -f /root/repo20.1.key ]
+if [ ! -f /root/repo${OPNSENSE_VERSION}.key ]
 then
-    openssl genrsa -out /root/repo20.1.key 4096
-    chmod 0400 /root/repo20.1.key
-    openssl rsa -in /root/repo20.1.key -out /root/repo20.1.pub -pubout
+    openssl genrsa -out /root/repo${OPNSENSE_VERSION}.key 4096
+    chmod 0400 /root/repo${OPNSENSE_VERSION}.key
+    openssl rsa -in /root/repo${OPNSENSE_VERSION}.key -out /root/repo${OPNSENSE_VERSION}.pub -pubout
     ## FIXME  : SAVE KEYS !!!!
 fi
 
