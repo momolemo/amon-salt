@@ -2,7 +2,7 @@
 
 set -e
 
-source builder.conf
+. builder.conf
 
 # Generate Amon3 repository sign keys
 # FIXME : IMPORT KEYS

@@ -2,7 +2,7 @@
 
 set -e
 
-source builder.conf
+. builder.conf
 
 REPO_SRV="repository@castor.eole.lan"
 REPO_EXEC_CMD="ssh $REPO_SRV"
