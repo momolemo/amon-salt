@@ -1,9 +1,9 @@
 Amon3 git repository
 ====================
 
-* Scripts to build ISO and generate packages repository
-* How to install Amon3
-
+* Scripts to build ISO and generate packages repository in *@builder@* directory
+* Centralised managment of Amon 3, Saltstack formula in *@master/opnsense@* directory
+* Saltstack pillars examples in *@mater/pillar@* directory
 
 Amon3 repository and ISO Builder
 ================================
@@ -41,11 +41,7 @@ grab the repositories (overwriting standard ports and src):
     # builder/12-amon3_packages_repo.sh  # update Amon3 repository
 
 
-Amon3 insntallation/configuration
+Amon3 installation/configuration
 =================================
 
-* Plugin list :
-** os-nginx : reverse proxy
-
-Download ISO here : http://test-eole.ac-dijon.fr/amon3/FreeBSD:11:amd64/20.1/sets/OPNsense-20.1-OpenSSL-dvd-amd64.iso
-
+See blog on https://pcll.ac-dijon.fr/eole
