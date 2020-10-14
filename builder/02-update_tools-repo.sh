@@ -1,8 +1,8 @@
 #!/bin/sh
 
-set -e
+set +e
 
-. builder.conf
+. $(dirname $0)/builder.conf
 
 # Generate Amon3 repository sign keys
 # FIXME : IMPORT KEYS
