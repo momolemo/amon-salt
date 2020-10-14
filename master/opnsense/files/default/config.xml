@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+
+<opnsense>
+  <theme>opnsense</theme>
+{% include 'opnsense/files/default/sysctl/sysctl.conf' %}
+{% include 'opnsense/files/default/system/system.conf' %}
+{% include 'opnsense/files/default/interfaces/interfaces.conf' %}
+  <dhcpd/>
+{% include 'opnsense/files/default/unbound/unbound.conf' %}
+{% include 'opnsense/files/default/snmpd/snmpd.conf' %}
+  <syslog>
+    <reverse/>
+  </syslog>
+{% include 'opnsense/files/default/filter/filter.conf' %}
+  <rrd>
+    <enable/>
+  </rrd>
+{% include 'opnsense/files/default/loadbalancer/loadbalancer.conf' %}
+{% include 'opnsense/files/default/ntpd/ntpd.conf' %}
+{% include 'opnsense/files/default/widgets/widgets.conf' %}
+{% include 'opnsense/files/default/revision/revision.conf' %}
+  <OPNsense>
+{% include 'opnsense/files/default/firewall/firewall.conf' %}
+    <captiveportal version="1.0.0">
+      <zones/>
+      <templates/>
+    </captiveportal>
+    <cron version="1.0.1">
+      <jobs/>
+    </cron>
+{% include 'opnsense/files/default/ids/ids.conf' %}
+    <OpenVPNExport version="0.0.1">
+      <servers/>
+    </OpenVPNExport>
+{% include 'opnsense/files/default/syslog/syslog.conf' %}
+    <TrafficShaper version="1.0.3">
+      <pipes/>
+      <queues/>
+      <rules/>
+    </TrafficShaper>
+{% include 'opnsense/files/default/monit/monit.conf' %}
+{% include 'opnsense/files/default/netflow/netflow.conf' %}
+    <Interfaces>
+      <vxlans/>
+      <loopbacks/>
+    </Interfaces>
+{% include 'opnsense/files/default/proxy/proxy.conf' %}
+{% include 'opnsense/files/default/nginx/nginx.conf' %}
+  </OPNsense>
+  <ca/>
+{% include 'opnsense/files/default/gateway/gateway.conf' %}
+{% include 'opnsense/files/default/cert/cert.conf' %}
+  <ppps>
+    <ppp/>
+  </ppps>
+  <virtualip>
+    <vip/>
+  </virtualip>
+{% include 'opnsense/files/default/dhcrelay/dhcrelay.conf' %}
+  <staticroutes/>
+{% include 'opnsense/files/default/nat/nat.conf' %}
+</opnsense>
